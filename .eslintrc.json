@@ -1,0 +1,79 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "extends": [
+    "react-app",
+    "prettier",
+    "prettier/react",
+    "plugin:prettier/recommended"
+  ],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "settings": {
+    "react": {
+      "pragma": "React",
+      "version": "17.0.1"
+    },
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"],
+        "paths": ["src"]
+      }
+    }
+  },
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2021,
+    "sourceType": "module"
+  },
+  "plugins": ["react", "@babel"],
+  "rules": {
+    "curly": [1, "all"],
+    "radix": 0,
+    "jsx-a11y/click-events-have-key-events": 0,
+    "jsx-a11y/mouse-events-have-key-events": 0,
+    "no-console": [
+      2,
+      {
+        "allow": ["warn", "error"]
+      }
+    ],
+    "no-nested-ternary": 0,
+    "no-param-reassign": [1, { "props": true }],
+    "no-unused-expressions": [1, { "allowShortCircuit": true }],
+    "no-plusplus": 1,
+    "sort-vars": 1,
+    "sort-keys": [1, "asc", { "caseSensitive": true }],
+    "sort-imports": [
+      1,
+      {
+        "allowSeparatedGroups": true,
+        "ignoreCase": true,
+        "memberSyntaxSortOrder": ["single", "all", "multiple", "none"]
+      }
+    ],
+    "camelcase": 0,
+    "import/no-unresolved": [1, { "caseSensitive": true }],
+    "import/extensions": [
+      2,
+      "ignorePackages",
+      {
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
+    ],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
+    "react/jsx-props-no-spreading": 0,
+    "react/no-array-index-key": 0,
+    "react/require-default-props": 0
+  }
+}

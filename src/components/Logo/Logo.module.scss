@@ -1,0 +1,18 @@
+.logo {
+  display: inline-block;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 200%;
+  color: #fdffce;
+  position: relative;
+  line-height: 1.6;
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    width: 90%;
+    height: 1px;
+    background: #fdffce;
+  }
+}

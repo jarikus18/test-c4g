@@ -1,0 +1,25 @@
+.thead {
+    width: 100px;
+    border-bottom: 2px solid black;
+    font-size: 120%;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+.wrap {
+    border-collapse: collapse
+}
+.td {
+    vertical-align: middle;
+}
+.col {
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.trow {
+    border: 1px solid #333333;
+    &:nth-child(odd) {
+        background: #EEEEEE;
+    }
+}

@@ -1,0 +1,17 @@
+.wrap {
+    display: flex;
+    min-height: 100vh;
+    height: 100%;
+}
+.aside {
+    background-color: #333333;
+    width: 20vw;
+    padding: 2%;
+}
+.main {
+    width: 100%;
+    padding: 30px 20px;
+}
+.menu {
+    padding-top: 20vh;
+}

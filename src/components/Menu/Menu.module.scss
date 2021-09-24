@@ -1,0 +1,17 @@
+.list {
+  margin-top: 2%;
+}
+.listItem {
+  margin-bottom: 10px;
+}
+.link {
+  color: #fff;
+  font-size: 150%;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+.activeLink {
+  text-decoration: underline;
+}
